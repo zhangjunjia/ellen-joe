@@ -1,7 +1,13 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { CheckIcon } from '@/components/CheckIcon'
 import { Container } from '@/components/Container'
+
+import slashImage from '@/images/resources/slash.webp'
+import victoriaHousekeepingCoImage from '@/images/resources/victoria-housekeeping-co.webp'
+import iceImage from '@/images/resources/ice.webp'
+import rarity4Image from '@/images/resources/rarity4.webp'
 
 export function Introduction() {
   return (
@@ -60,8 +66,14 @@ export function Introduction() {
       </Container>
 <Container>
 <div className="flex flex-col w-full h-full text-white bg-zinc-800 rounded-lg shadow-sm my-4">
-  <div className="flex justify-between pl-2 w-full bg-zinc-600 rounded-t-lg h-15 font-bold leading-[60px]">
+  {/* <div className="flex justify-between pl-2 w-full bg-zinc-600 rounded-t-lg h-15 font-bold leading-[60px]">
     <h3>Ellen Joe - Agent Information</h3>
+  </div> */}
+  <div className="flex justify-between items-center bg-zinc-600 px-4 py-4 rounded-t-lg">
+    <p className="font-bold text-lg">Ellen Joe - Agent Information</p>
+    <a href="/agent-infomation" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-300 hover:text-blue-100 transition-colors duration-200">
+      More Info
+    </a>
   </div>
   <div className="flex flex-col sm:flex-row p-2 mt-1 w-full text-white">
     <section className="w-full sm:w-1/2 break-words mb-4 sm:mb-0">
@@ -70,10 +82,10 @@ export function Introduction() {
           Faction
         </div>
         <div className="flex flex-wrap gap-1 justify-start items-center p-1 max-w-full sm:w-[calc(100%-130px)] font-bold min-h-[40px] sm:min-h-[57px]">
-          <a href="/characters/?faction=Victoria Housekeeping Co." className="font-bold text-lime-400 whitespace-nowrap cursor-pointer focus:outline-0 transition-all duration-120 ease-in-out">
-            <img src="https://static.dotgg.gg/zenless/factions/victoria-housekeeping-co.webp" alt="Faction: Victoria Housekeeping Co." className="object-contain inline-block mr-1 align-middle w-6 h-6 sm:w-8 sm:h-8 filter drop-shadow-md" />
+          <p className="font-bold text-lime-400 whitespace-nowrap  focus:outline-0 transition-all duration-120 ease-in-out">
+            <Image src={victoriaHousekeepingCoImage} alt="Faction: Victoria Housekeeping Co." className="object-contain inline-block mr-1 align-middle w-6 h-6 sm:w-8 sm:h-8 filter drop-shadow-md" />
             Victoria Housekeeping Co.
-          </a>
+          </p>
         </div>
       </div>
       <div className="flex flex-col sm:flex-row w-full mb-3 sm:mb-0">
@@ -81,10 +93,10 @@ export function Introduction() {
           Attack
         </div>
         <div className="flex flex-wrap gap-1 justify-start items-center p-1 max-w-full sm:w-[calc(100%-130px)] font-bold min-h-[40px] sm:min-h-[57px]">
-          <a href="/characters/?attack=Slash" className="font-bold text-lime-400 whitespace-nowrap cursor-pointer focus:outline-0 transition-all duration-120 ease-in-out">
-            <img src="https://static.dotgg.gg/zenless/hittypes/slash.webp" alt="Attack: Slash" className="object-contain inline-block mr-1 align-middle w-6 h-6 sm:w-8 sm:h-8 filter drop-shadow-md" />
+          <p href="/characters/?attack=Slash" className="font-bold text-lime-400 whitespace-nowrap  focus:outline-0 transition-all duration-120 ease-in-out">
+            <Image src={slashImage} alt="Attack: Slash" className="object-contain inline-block mr-1 align-middle w-6 h-6 sm:w-8 sm:h-8 filter drop-shadow-md" />
             Slash
-          </a>
+          </p>
         </div>
       </div>
       <div className="flex flex-col sm:flex-row w-full mb-3 sm:mb-0">
@@ -92,10 +104,10 @@ export function Introduction() {
           Element
         </div>
         <div className="flex flex-wrap gap-1 justify-start items-center p-1 max-w-full sm:w-[calc(100%-130px)] font-bold min-h-[40px] sm:min-h-[57px]">
-          <a href="/characters/?element=Ice" className="font-bold text-lime-400 whitespace-nowrap cursor-pointer focus:outline-0 transition-all duration-120 ease-in-out">
-            <img src="https://static.dotgg.gg/zenless/elements/ice.webp" alt="Element: Ice" className="object-contain inline-block mr-1 align-middle w-6 h-6 sm:w-8 sm:h-8 filter drop-shadow-md" />
+          <p href="/characters/?element=Ice" className="font-bold text-lime-400 whitespace-nowrap  focus:outline-0 transition-all duration-120 ease-in-out">
+            <Image src={iceImage} alt="Element: Ice" className="object-contain inline-block mr-1 align-middle w-6 h-6 sm:w-8 sm:h-8 filter drop-shadow-md" />
             Ice
-          </a>
+          </p>
         </div>
       </div>
       <div className="flex flex-col sm:flex-row gap-1">
@@ -120,10 +132,10 @@ export function Introduction() {
           Rarity
         </div>
         <div className="flex flex-wrap gap-1 justify-start items-center p-1 max-w-full sm:w-[calc(100%-130px)] font-bold min-h-[40px] sm:min-h-[57px]">
-          <a href="/characters/?rarity=4" className="font-bold text-lime-400 whitespace-nowrap cursor-pointer focus:outline-0 transition-all duration-120 ease-in-out">
-            <img src="https://static.dotgg.gg/zenless/icons/rarity4.webp" alt="Rarity: A" className="object-contain inline-block mr-1 align-middle w-6 h-6 sm:w-8 sm:h-8 filter drop-shadow-md" />
+          <p href="/characters/?rarity=4" className="font-bold text-lime-400 whitespace-nowrap  focus:outline-0 transition-all duration-120 ease-in-out">
+            <Image src={rarity4Image} alt="Rarity: A" className="object-contain inline-block mr-1 align-middle w-6 h-6 sm:w-8 sm:h-8 filter drop-shadow-md" />
             A
-          </a>
+          </p>
         </div>
       </div>
       <div className="flex flex-col sm:flex-row w-full mb-3 sm:mb-0">
