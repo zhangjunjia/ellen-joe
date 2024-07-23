@@ -1,6 +1,9 @@
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
 import clsx from 'clsx'
+import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 import '@/styles/tailwind.css'
 
@@ -40,6 +43,9 @@ export default function RootLayout({ children }) {
         {children}
         <Analytics />
       </body>
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_G_ID} />
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_G_ID} />
+
     </html>
   )
 }
