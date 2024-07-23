@@ -9,7 +9,7 @@ import videoPlayerImage from '@/images/resources/video-player.svg'
 
 const resources = [
   {
-    title: 'HoYoLAB Discussions',
+    title: 'Zenless Zone Zero HoYoLAB Discussions',
     description:
       'HoYoLAB is the official gaming community forum for HoYoverse games, including Zenless Zone Zero.',
     image: function FigmaImage() {

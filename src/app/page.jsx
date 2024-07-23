@@ -13,6 +13,12 @@ import { Testimonials } from '@/components/Testimonials'
 import avatarImage1 from '@/images/avatars/avatar-1.png'
 import avatarImage2 from '@/images/avatars/avatar-2.png'
 
+export const metadata = {
+  alternates: {
+    canonical: 'https://ellenjoe.org/',
+  },
+}
+
 export default function Home() {
   return (
     <>
