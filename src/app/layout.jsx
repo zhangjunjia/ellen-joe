@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
         {children}
         <Analytics />
       </body>
-      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_G_ID} />
+      {/* <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_G_ID} /> */}
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_G_ID} />
 
     </html>
