@@ -98,8 +98,8 @@ export function TableOfContents() {
   </div> */}
   <div className="flex justify-between items-center bg-zinc-600 px-4 py-4 rounded-t-lg">
     <p className="font-bold text-lg">Ellen Joe - Agent Skills</p>
-    <a href="/more_skills" className="text-sm text-blue-300 hover:text-blue-100 transition-colors duration-200">
-      More Info
+    <a href="/agent-skills" target="_blank" rel="noopener noreferrer" className="text-sm text-blue-300 hover:text-blue-100 transition-colors duration-200">
+      More Skills
     </a>
   </div>
   <div className="flex flex-col p-2 space-y-2 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 gap-2">

@@ -147,7 +147,7 @@ export function Testimonials() {
         </h2>
         <p className="mt-4 text-lg tracking-tight text-slate-600">
           Ellen Joe is a character from the game Zenless Zone Zero. 
-          According to the most <Link href="/fandom">reliable sources</Link>, Ellen Joe is 17 years old. 
+          According to the most <Link href="/fandom-wiki" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">reliable sources</Link>, Ellen Joe is 17 years old. 
           Her birthday is on January 4th, and she stands at 161 cm (5'4").
         </p>
         <div className="relative z-10 mx-auto flex w-64 rounded-xl bg-slate-600 shadow-xl md:w-80 lg:w-auto my-4">

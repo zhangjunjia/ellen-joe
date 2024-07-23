@@ -15,7 +15,7 @@ const resources = [
     image: function FigmaImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
-          <a href="/official"><Image src={figmaImage} alt="" unoptimized /></a>
+          <a href="/official-group" target="_blank" rel="noopener noreferrer"><Image src={figmaImage} alt="" unoptimized /></a>
         </div>
       )
     },
@@ -33,7 +33,7 @@ const resources = [
             alt=""
             sizes="(min-width: 1280px) 21rem, (min-width: 1024px) 33vw, (min-width: 768px) 19rem, (min-width: 640px) 50vw, 100vw"
           />
-          <a href="/reddit"><Image
+          <a href="/reddit-group" target="_blank" rel="noopener noreferrer"><Image
             className="relative"
             src={videoPlayerImage}
             alt=""
@@ -50,7 +50,7 @@ const resources = [
     image: function DiscordImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
-          <a href="/discord"><Image src={discordImage} alt="" unoptimized /></a>
+          <a href="/discord-group" target="_blank" rel="noopener noreferrer"><Image src={discordImage} alt="" unoptimized /></a>
         </div>
       )
     },

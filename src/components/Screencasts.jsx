@@ -92,7 +92,7 @@ export function Screencasts() {
                 }}
               >
                 <div className="flex overflow-hidden rounded shadow-sm">
-                  <a href="/image_link"><Image src={video.image} alt={video.description} unoptimized /></a>
+                  <a href="/ellen-wallpapers" target="_blank" rel="noopener noreferrer"><Image src={video.image} alt={video.description} unoptimized /></a>
                 </div>
                 {/* <div className="absolute bottom-2 left-2 flex items-center rounded-lg bg-black/30 px-1.5 py-0.5 text-sm text-white [@supports(backdrop-filter:blur(0))]:bg-white/10 [@supports(backdrop-filter:blur(0))]:backdrop-blur">
                   <PlayIcon className="h-4 w-4 fill-current stroke-current" />
@@ -114,7 +114,7 @@ export function Screencasts() {
           ))}
         </ol>
         <div className="flex justify-center items-center my-8">
-          <a href="/more_wallpapers" className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition duration-300 ease-in-out">
+          <a href="/ellen-wallpapers" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition duration-300 ease-in-out">
             Explore Wallpapers
           </a>
         </div>
