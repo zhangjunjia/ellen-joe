@@ -5,6 +5,8 @@ import { CheckIcon } from '@/components/CheckIcon'
 import { Container } from '@/components/Container'
 import { GridPattern } from '@/components/GridPattern'
 import { SectionHeading } from '@/components/SectionHeading'
+import { YouTubeEmbed } from '@next/third-parties/google'
+
 
 function Plan({ name, description, price, features, href, featured = false }) {
   return (
@@ -112,25 +114,29 @@ export function Pricing() {
   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
       <div className="aspect-w-16 aspect-h-9">
-        <iframe src="https://www.youtube.com/embed/6iWNuzAFSpk?feature=oembed&enablejsapi=1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        {/* <iframe src="https://www.youtube.com/embed/6iWNuzAFSpk?feature=oembed&enablejsapi=1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
+        <YouTubeEmbed videoid="6iWNuzAFSpk" />
       </div>
     </div>
 
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
       <div className="aspect-w-16 aspect-h-9">
-        <iframe src="https://www.youtube.com/embed/6Sz3IBKkvQk?feature=oembed&enablejsapi=1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        {/* <iframe src="https://www.youtube.com/embed/6Sz3IBKkvQk?feature=oembed&enablejsapi=1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
+        <YouTubeEmbed videoid="6Sz3IBKkvQk" />
       </div>
     </div>
 
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
       <div className="aspect-w-16 aspect-h-9">
-        <iframe src="https://www.youtube.com/embed/X1Yr-MfR7QQ?feature=oembed&enablejsapi=1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        {/* <iframe src="https://www.youtube.com/embed/X1Yr-MfR7QQ?feature=oembed&enablejsapi=1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
+        <YouTubeEmbed videoid="X1Yr-MfR7QQ" />
       </div>
     </div>
 
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
       <div className="aspect-w-16 aspect-h-9">
-        <iframe src="https://www.youtube.com/embed/Ad18EUtQhl0?feature=oembed&enablejsapi=1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        {/* <iframe src="https://www.youtube.com/embed/Ad18EUtQhl0?feature=oembed&enablejsapi=1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
+        <YouTubeEmbed videoid="Ad18EUtQhl0" />
       </div>
     </div>
   </div>
