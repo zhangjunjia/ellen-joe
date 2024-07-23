@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
@@ -35,7 +36,10 @@ export default function RootLayout({ children }) {
           href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700&display=swap"
         />
       </head>
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
