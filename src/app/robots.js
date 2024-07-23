@@ -5,7 +5,6 @@ export default function robots() {
     rules: {
       userAgent: '*',
       disallow: [
-        '/',
         '/agent-infomation',
         '/agent-skills',
         '/ellen-wallpapers',
