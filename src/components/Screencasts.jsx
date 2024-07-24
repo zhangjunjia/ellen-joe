@@ -78,41 +78,31 @@ export function Screencasts() {
         </p>
       </Container>
       <Container size="lg" className="mt-16">
-        <ol
-          role="list"
-          className="grid grid-cols-1 gap-x-8 gap-y-10 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-4"
-        >
-          {videos.map((video) => (
-            <li key={video.title} className="[counter-increment:video]">
-              <div
-                className="relative flex h-44 items-center justify-center rounded-2xl px-6 shadow-lg"
-                style={{
-                  backgroundImage:
-                    'conic-gradient(from -49.8deg at 50% 50%, #7331FF 0deg, #00A3FF 59.07deg, #4E51FF 185.61deg, #39DBFF 284.23deg, #B84FF1 329.41deg, #7331FF 360deg)',
-                }}
-              >
-                <div className="flex overflow-hidden rounded shadow-sm">
-                  <a href="/ellen-wallpapers" target="_blank" rel="noopener noreferrer"><Image src={video.image} alt={video.description} unoptimized /></a>
-                </div>
-                {/* <div className="absolute bottom-2 left-2 flex items-center rounded-lg bg-black/30 px-1.5 py-0.5 text-sm text-white [@supports(backdrop-filter:blur(0))]:bg-white/10 [@supports(backdrop-filter:blur(0))]:backdrop-blur">
-                  <PlayIcon className="h-4 w-4 fill-current stroke-current" />
-                  <time
-                    dateTime={`${video.runtime.minutes}m ${video.runtime.seconds}s`}
-                    className="ml-2"
-                  >
-                    {`${video.runtime.minutes}:${video.runtime.seconds
-                      .toString()
-                      .padStart(2, '0')}`}
-                  </time>
-                </div> */}
-              </div>
-              {/* <h3 className="mt-8 text-base font-medium tracking-tight text-slate-900 before:mb-2 before:block before:font-mono before:text-sm before:text-slate-500 before:content-[counter(video,decimal-leading-zero)]">
-                {video.title}
-              </h3> */}
-              <p className="mt-2 text-sm text-slate-600">{video.description}</p>
-            </li>
-          ))}
-        </ol>
+<ol
+  role="list"
+  className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 lg:grid-cols-4 [counter-reset:video]"
+>
+  {videos.map((video) => (
+    <li key={video.title} className="[counter-increment:video] flex flex-col">
+      <div
+        className="relative flex h-44 items-center justify-center rounded-2xl px-6 shadow-lg mb-4"
+        style={{
+          backgroundImage:
+            'conic-gradient(from -49.8deg at 50% 50%, #7331FF 0deg, #00A3FF 59.07deg, #4E51FF 185.61deg, #39DBFF 284.23deg, #B84FF1 329.41deg, #7331FF 360deg)',
+        }}
+      >
+        <div className="flex overflow-hidden rounded shadow-sm">
+          <a href="/ellen-wallpapers" target="_blank" rel="noopener noreferrer">
+            <Image src={video.image} alt={video.description} unoptimized />
+          </a>
+        </div>
+      </div>
+      <div className="flex-grow">
+        <p className="text-sm text-slate-600">{video.description}</p>
+      </div>
+    </li>
+  ))}
+</ol>
         <div className="flex justify-center items-center my-8">
           <a href="/ellen-wallpapers" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition duration-300 ease-in-out">
             Explore Wallpapers
