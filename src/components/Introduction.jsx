@@ -159,7 +159,7 @@ export function Introduction() {
           Age
         </div>
         <div className="flex flex-wrap gap-1 justify-start items-center p-1 max-w-full sm:w-[calc(100%-130px)] font-bold min-h-[40px] sm:min-h-[57px]">
-          A 17-year-old high school student
+          <Link href="/ellen-joe-age" target="_blank" className="text-blue-600 underline">A 17-year-old high school student</Link>
         </div>
       </div>
     </section>
