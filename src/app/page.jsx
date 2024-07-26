@@ -25,6 +25,7 @@ export default function Home() {
       <Hero />
       <Introduction />
       {/* <NavBar /> */}
+      <Testimonials />
       <TableOfContents />
       {/* <Testimonial
         id="testimonial-from-tommy-stroman"
@@ -56,7 +57,6 @@ export default function Home() {
       <Resources />
       {/* <FreeChapters /> */}
       <Pricing />
-      <Testimonials />
       {/* <Author /> */}
       <Footer />
     </>

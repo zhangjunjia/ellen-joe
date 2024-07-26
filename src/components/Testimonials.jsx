@@ -147,11 +147,16 @@ export function Testimonials() {
         </h2>
         <p className="mt-4 text-lg tracking-tight text-slate-600">
           Ellen Joe is a character from the game Zenless Zone Zero. 
-          According to the most <Link href="/fandom-wiki" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">reliable sources</Link>, Ellen Joe is 17 years old. 
-          Her birthday is on January 4th, and she stands at 161 cm (5'4").
+          According to the most reliable sources
+          {/* <Link href="/fandom-wiki" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">reliable sources</Link> */}
+          , Ellen Joe is 17 years old. 
+          Her birthday is on January 4th, and she stands at 161 cm (5'4"). <Link href="/ellen-joe-age" target="_blank" className="text-blue-600 underline">Read More.</Link>
         </p>
-        <div className="relative z-10 mx-auto flex w-64 rounded-xl bg-slate-600 shadow-xl md:w-80 lg:w-auto my-4">
+        {/* <div className="relative z-10 mx-auto flex w-64 rounded-xl bg-slate-600 shadow-xl md:w-80 lg:w-auto my-4">
           <Image className="w-full" src={coverImage} alt="" priority />
+        </div> */}
+        <div className="flex justify-center">
+          <Image src={coverImage} alt="Full body image of Ellen Joe" width={300} height={600} className="rounded-lg shadow-lg" />
         </div>
       </Container>
       {/* <Expandable className="group mt-16">
